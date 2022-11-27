@@ -19,7 +19,14 @@
 					<img src="img/Flag-Ukr.png" class="header__flag-ukr" alt="flag-ukr">
 					<span class="header__language-text">укр.</span>
 					<img src="img/Down-Arrow.svg">
-					<nav class="header__language-list"></nav>
+					<nav class="header__language-list">
+						<ul>
+							<li>
+								<img src="img/russia 1.png" alt="rus">
+								<span class="header__language-text">РУС.</span>
+							</li>
+						</ul>
+					</nav>
 				</div>
 				<div class="header__city">
 					<div class="header__icon-location square">
@@ -30,7 +37,18 @@
 						<img src="img/Down-Arrow.svg">
 					</div>
 					<div class="header__city-bottom">оболонь</div>
-					<nav class="header__city-list"></nav>
+					<nav class="header__city-list">
+						<ul>
+							<li>
+								<h4>Київ</h4>
+								<h6>Дарниця</h6>
+							</li>
+							<li>
+								<h4>Київ</h4>
+								<h6>Дарниця</h6>
+							</li>
+						</ul>
+					</nav>
 				</div>
 				<a href="tel:0443908810" class="header__phone">
 					<div class="header__logo-phone square">
@@ -39,10 +57,10 @@
 					<h3 class="header__phone-num">044 390 88 10</h3>
 					<h5 class="header__phone-bottom">за тарифом оператора</h5>
 				</a>
-				<a href="#" class="header__btn-fast-order btn-fast-order">
+				<div class="header__btn-fast-order btn-fast-order">
 					<img src="" alt="" class="header__fast-order-logo">
 					<span>Швидке замовлення</span>
-				</a>
+				</div>
 				<a href="#" class="header__shop-cart square">
 					<img src="img/shopping-cart 1.svg" alt="shop-cart">
 					<div class="header__shop-cart-number"><span>0</span></div>
@@ -76,7 +94,7 @@
 					</ul>
 				</nav>
 				<nav class="sidebar__info-pages">
-					<ul class="sidebar__list-info-pages">
+					<ul>
 						<a href="#" class="sidebar__link">
 							<img src="img/promote 1.svg" class="sidebar__link-icon">
 							<h3 class="sidebar__title-link">про нас</h3>
@@ -96,28 +114,28 @@
 					</ul>
 				</nav>
 			</div>
-			<div class="sidebar__socials">
-				<div class="sidebar__big-links">
-					<a target="_blank" href="https://telegram.org/" class="sidebar__social-link-big">
+			<div class="sidebar__socials socials">
+				<div>
+					<a target="_blank" href="https://telegram.org/" class="socials__link-big">
 						<img src="">
 						<h3>ЗАМОВИТИ У Telegram</h3>
 					</a>
-					<a target="_blank" href="https://www.viber.com/ua/" class="sidebar__social-link-big">
+					<a target="_blank" href="https://www.viber.com/ua/" class="socials__link-big">
 						<img src="">
 						<h3>ЗАМОВИТИ У VIBER</h3>
 					</a>
 				</div>
-				<div class="sidebar__mini-links">
-					<a target="_blank" href="https://facebook.com/" class="sidebar__social-link-mini">
+				<div class="socials__mini-links">
+					<a target="_blank" href="https://facebook.com/">
 						<img src="img/facebook.png" alt="facebook">
 					</a>
-					<a target="_blank" href="https://instagram.com/" class="sidebar__social-link-mini">
+					<a target="_blank" href="https://instagram.com/">
 						<img src="img/instagram.png" alt="Instagram">
 					</a>
-					<a target="_blank" href="https://youtube.com/" class="sidebar__social-link-mini">
+					<a target="_blank" href="https://youtube.com/">
 						<img src="img/youtube (1).png" alt="YouTube">
 					</a>
-					<a target="_blank" href="https://tiktok.com/" class="sidebar__social-link-mini">
+					<a target="_blank" href="https://tiktok.com/">
 						<img src="img/tiktok.png" alt="TikTok">
 					</a>
 				</div>
@@ -145,20 +163,20 @@
 						<img src="img/email 1.svg" alt="email" class="book-form__logo-email">
 						<h5 class="book-form__title-bottom">і наш менеджер зв'яжеться з вами найближчим часом</h5>
 					</div>
-					<div class="book-form__block-city">
-						<label class="book-form__label-city" for="city">Виберіть місто</label>
-						<input placeholder="Київ" type="search" id="city" name="city" class="book-form__city-input">
-						<button class="book-form__btn-search"><img src="img/search 1.svg"></button>
+					<div class="book-form__block-city block-city">
+						<label class="book-form__label-city label-city" for="city">Виберіть місто</label>
+						<input placeholder="Київ" type="search" id="city" name="city" class="book-form__city-input city-input">
+						<button class="book-form__btn-search btn-search"><img src="img/search 1.svg"></button>
 					</div>
 					<form action="#" class="book-form__block-form">
-						<label for="name" class="book-form__label-name">Ваше ім’я</label>
-						<input placeholder="Наприклад, Наталья" type="text" id="name" name="name" class="book-form__input-name">
-						<label for="phone" class="book-form__label-phone">Номер телефону</label>
-						<input placeholder="+38(__) ___ __" type="text" id="phone" name="phone" class="book-form__input-phone">
-						<button class="book-form__btn"><span>Відправити</span></button>
-						<div class="book-form__container-checkbox">
-							<input name="checkbox" id="checkbox" type="checkbox" class="book-form__checkbox">
-							<label  for="checkbox">Я погоджуюсь з Правилами користування, Політикою конфіденційності та Згодою на збір та обробку персональних даних</label>
+						<label for="name" class="book-form__label-name label-name">Ваше ім’я</label>
+						<input placeholder="Наприклад, Наталья" type="text" id="name" name="name" class="book-form__input-name input-name">
+						<label for="phone" class="book-form__label-phone label-phone">Номер телефону</label>
+						<input placeholder="+38(__) ___ __" type="text" id="phone" name="phone" class="book-form__input-phone input-phone">
+						<button class="book-form__btn-order btn-order"><span>Відправити</span></button>
+						<div class="book-form__container-checkbox container-checkbox">
+							<input name="checkbox" id="checkbox" type="checkbox" class="book-form__checkbox checkbox">
+							<label for="checkbox">Я погоджуюсь з Правилами користування, Політикою конфіденційності та Згодою на збір та обробку персональних даних</label>
 						</div>
 					</form>
 				</div>
@@ -172,9 +190,9 @@
 						<h5 class="top-sales__info">З іонами срібла</h5>
 						<h4 class="top-sales__price">177.00</h4>
 						<form action="" class="top-sales__form">
-							<button class="top-sales__btn-min-plus"><img src="img/remove 1.svg"></button>
-							<input placeholder="1" type="number" class="top-sales__input">
-							<button class="top-sales__btn-min-plus"><img src="img/add 2.svg"></button>
+							<button class="btn-min-plus"><img src="img/remove 1.svg"></button>
+							<input placeholder="1" type="number" class="input-number-of-bottles">
+							<button class="btn-min-plus"><img src="img/add 2.svg"></button>
 							<button class="top-sales__cart"><img src="img/shopping-cart 1 (1).svg"><span>В кошик</span></button>
 						</form>
 						<div class="top-sales__circle"><h3>топ</h3></div>
@@ -185,9 +203,9 @@
 						<h5 class="top-sales__info">З іонами срібла</h5>
 						<h4 class="top-sales__price">177.00</h4>
 						<form action="" class="top-sales__form">
-							<button class="top-sales__btn-min-plus"><img src="img/remove 1.svg"></button>
-							<input placeholder="1" type="number" class="top-sales__input">
-							<button class="top-sales__btn-min-plus"><img src="img/add 2.svg"></button>
+							<button class="btn-min-plus"><img src="img/remove 1.svg"></button>
+							<input placeholder="1" type="number" class="input-number-of-bottles">
+							<button class="btn-min-plus"><img src="img/add 2.svg"></button>
 							<button class="top-sales__cart"><img src="img/shopping-cart 1 (1).svg"><span>В кошик</span></button>
 						</form>
 					</div>
@@ -197,9 +215,9 @@
 						<h5 class="top-sales__info">З іонами срібла</h5>
 						<h4 class="top-sales__price">177.00</h4>
 						<form action="" class="top-sales__form">
-							<button class="top-sales__btn-min-plus"><img src="img/remove 1.svg"></button>
-							<input placeholder="1" type="number" class="top-sales__input">
-							<button class="top-sales__btn-min-plus"><img src="img/add 2.svg"></button>
+							<button class="btn-min-plus"><img src="img/remove 1.svg"></button>
+							<input placeholder="1" type="number" class="input-number-of-bottles">
+							<button class="btn-min-plus"><img src="img/add 2.svg"></button>
 							<button class="top-sales__cart"><img src="img/shopping-cart 1 (1).svg"><span>В кошик</span></button>
 						</form>
 					</div>
@@ -262,10 +280,10 @@
 							<span>08:00 - 23:00</span>
 						</li>
 					</ul>
-					<a href="#" class="delivery__btn-fast-order btn-fast-order">
+					<div class="delivery__btn-fast-order btn-fast-order">
 						<img src="" alt="" class="header__fast-order-logo">
 						<span>Швидке замовлення</span>
-					</a>
+					</div>
 				</div>
 				<div class="delivery__block-img">
 					<img src="img/Mask group.png" alt="delivery man">
@@ -370,8 +388,89 @@
 				<a href="#" class="text__link"><span>Читати все</span><img src="img/right.svg"></a>
 			</div>
 		</main>
+		<section class="block-fast-order">
+			<button class="cancel-btn"><img src="img/cancel 1.svg" alt="cancel"></button>
+			<h1 class="block-fast-order__header">Швидке замовлення води</h1>
+			<p class="block-fast-order__paragraf">Вкажіть контактну інформацію - оператор call-центру передзвонить вам і уточнить деталі замовлення</p>
+			<div class="block-fast-order__content">
+				<div class="block-fast-order__number-of-bottles">
+					<span class="block-fast-order__number-of-bottles-text">Кількість бутлів</span>
+					<div class="block-fast-order__block-input-number-of-bottles">
+						<button class="block-fast-order__btn-min-plus block-fast-order__btn-min-plus_minus btn-min-plus"><span></span></button>
+						<input placeholder="1" type="number" class="input-number-of-bottles">
+						<button class="block-fast-order__btn-min-plus block-fast-order__btn-min-plus_plus btn-min-plus"><span></span><span></span></button>
+					</div>
+				</div>
+				<label for="name-fast-order" class="block-fast-order__label-name label-name">Ваше ім’я</label>
+				<input placeholder="Наприклад, Наталья" type="text" id="name-fast-order" name="name-fast-order" class="block-fast-order__input-name input-name">
+				<label for="phone-fast-order" class="block-fast-order__label-phone label-phone">Номер телефону</label>
+				<input placeholder="+38(__) ___ __" type="text" id="phone-fast-order" name="phone-fast-order" class="block-fast-order__input-phone input-phone">
+				<div class="block-fast-order__block-city block-city">
+					<label class="block-fast-order__label-city label-city" for="city">Виберіть місто</label>
+					<input placeholder="Київ" type="search" id="city" name="city" class="block-fast-order__city-input city-input">
+					<button class="block-fast-order__btn-search btn-search"><img src="img/search 1.svg"></button>
+				</div>
+				<button class="block-fast-order__btn-order btn-order"><span>Відправити</span></button>
+				<div class="block-fast-order__container-checkbox container-checkbox">
+					<input name="checkbox-fast-order" id="checkbox-fast-order" type="checkbox" class="block-fast-order__checkbox checkbox">
+					<label for="checkbox-fast-order">Я погоджуюсь з Правилами користування, Політикою конфіденційності та Згодою на збір та обробку персональних даних</label>
+				</div>
+			</div>
+		</section>
+		<div class="block-order-confirm">
+			<div class="cancel-btn"><img src="img/cancel 1.svg" alt="cancel"></div>
+			<h1 class="block-order-confirm__title">Ваше замовлення прийнято</h1>
+			<p class="block-order-confirm__paragraf">Чекайте дзвінка, ми зв'яжемося з вами найближчим часом</p>
+		</div>
+		<section class="block-bg-blur"></section>
 		<footer class="footer">
-			
+			<div class="footer__container">
+				<div class="footer__block-image">
+					<img src="img/nero png 2.svg" alt="logo" class="footer__logo">
+					<a href="#" class="footer__link-privacy">Політика конфіденційності</a>
+					<a href="#" class="footer__tov-nero">© 2022 ТОВ «Nero»</a>
+				</div>
+				<ul class="footer__first-list">
+					<a href="#">Комбо-набори</a>
+					<a href="#">Вода в бутлях</a>
+					<a href="#">Виробництво</a>
+					<a href="#">Кулери</a>
+					<a href="#">Обладнання</a>
+				</ul>
+				<ul class="footer__second-list">
+					<a href="#">Про нас</a>
+					<a href="#">Доставка і оплата</a>
+					<a href="#">Блог</a>
+					<a href="#">Контакти</a>
+					<a href="#">0</a>
+				</ul>
+				<div class="footer__socials socials">
+					<div>
+						<a target="_blank" href="https://telegram.org/" class="socials__link-big">
+							<img src="">
+							<h3>ЗАМОВИТИ У Telegram</h3>
+						</a>
+						<a target="_blank" href="https://www.viber.com/ua/" class="socials__link-big">
+							<img src="">
+							<h3>ЗАМОВИТИ У VIBER</h3>
+						</a>
+					</div>
+					<div class="socials__mini-links">
+						<a target="_blank" href="https://facebook.com/">
+							<img src="img/facebook.png" alt="facebook">
+						</a>
+						<a target="_blank" href="https://instagram.com/">
+							<img src="img/instagram.png" alt="Instagram">
+						</a>
+						<a target="_blank" href="https://youtube.com/">
+							<img src="img/youtube (1).png" alt="YouTube">
+						</a>
+						<a target="_blank" href="https://tiktok.com/">
+							<img src="img/tiktok.png" alt="TikTok">
+						</a>
+					</div>
+				</div>
+			</div>
 		</footer>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>

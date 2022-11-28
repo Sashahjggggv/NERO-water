@@ -26,4 +26,7 @@ $(document).ready(function() {
 	$('.book-form__btn-order').click(function(event){
 		$('.block-order-confirm').toggleClass('active, ordered');
 	});
+	$('.header__burger,.block-hide-burger').click(function(event){
+		$('.header__burger,.sidebar,.block-hide-burger').toggleClass('active');
+	});
 });

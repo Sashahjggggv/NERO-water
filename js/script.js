@@ -18,10 +18,16 @@ $(document).ready(function() {
 		$('.block-fast-order,.block-order-confirm').toggleClass('ordered');
 	});
 	$('.header__language').click(function(event){
-		$('.header__language-list').toggleClass('active');
+		$('.language__list_header').toggleClass('active');
+	});
+	$('.sidebar__language').click(function(event){
+		$('.language__list_sidebar').toggleClass('active');
 	});
 	$('.header__city').click(function(event){
 		$('.header__city-list').toggleClass('active');
+	});
+	$('.sidebar__city').click(function(event){
+		$('.sidebar__city-list').toggleClass('active');
 	});
 	$('.book-form__btn-order').click(function(event){
 		$('.block-order-confirm').toggleClass('active, ordered');

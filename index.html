@@ -20,29 +20,29 @@
 				<a href="#" class="header__logo">
 					<img src="img/nero.png" alt="logo">
 				</a>
-				<div class="header__language">
+				<div class="header__language language">
 					<img src="img/Flag-Ukr.png" class="header__flag-ukr" alt="flag-ukr">
-					<span class="header__language-text">укр.</span>
+					<span class="language__text">укр.</span>
 					<img src="img/Down-Arrow.svg">
-					<nav class="header__language-list">
+					<nav class="language__list language__list_header">
 						<ul>
 							<li>
 								<img src="img/russia 1.png" alt="rus">
-								<span class="header__language-text">РУС.</span>
+								<span class="language__text">РУС.</span>
 							</li>
 						</ul>
 					</nav>
 				</div>
-				<div class="header__city">
-					<div class="header__icon-location square">
+				<div class="header__city city">
+					<div class="city__icon-location square">
 						<img src="img/location-icon.svg" alt="icon">
 					</div>
-					<div class="header__city-top">
+					<div class="city__city-top">
 						<span>Київ</span>
 						<img src="img/Down-Arrow.svg">
 					</div>
-					<div class="header__city-bottom">оболонь</div>
-					<nav class="header__city-list">
+					<div class="city__city-bottom">оболонь</div>
+					<nav class="city__city-list header__city-list">
 						<ul>
 							<li>
 								<h4>Київ</h4>
@@ -55,16 +55,20 @@
 						</ul>
 					</nav>
 				</div>
-				<a href="tel:0443908810" class="header__phone">
-					<div class="header__logo-phone square">
+				<a href="tel:0443908810" class="header__phone phone">
+					<div class="phone__logo square">
 						<img src="img/phone-icon.svg" alt="icon">
 					</div>
-					<h3 class="header__phone-num">044 390 88 10</h3>
-					<h5 class="header__phone-bottom">за тарифом оператора</h5>
+					<h3 class="phone__num">044 390 88 10</h3>
+					<h5 class="phone__bottom">за тарифом оператора</h5>
 				</a>
-				<div class="header__btn-fast-order btn-fast-order">
+				<div class="header__btn-fast-order header__btn-fast-order_first btn-fast-order">
 					<img src="" alt="" class="header__fast-order-logo">
 					<span>Швидке замовлення</span>
+				</div>
+				<div class="header__btn-fast-order header__btn-fast-order_second btn-fast-order">
+					<img src="" alt="" class="header__fast-order-logo">
+					<span>Замовлення</span>
 				</div>
 				<a href="#" class="header__shop-cart square">
 					<img src="img/shopping-cart 1.svg" alt="shop-cart">
@@ -119,6 +123,35 @@
 						</a>
 					</ul>
 				</nav>
+				<div class="sidebar__city city">
+					<div class="city__icon-location square">
+						<img src="img/location-icon.svg" alt="icon">
+					</div>
+					<div class="city__city-top">
+						<span>Київ</span>
+						<img src="img/Down-Arrow.svg">
+					</div>
+					<div class="city__city-bottom">оболонь</div>
+					<nav class="sidebar__city-list city__city-list">
+						<ul>
+							<li>
+								<h4>Київ</h4>
+								<h6>Дарниця</h6>
+							</li>
+							<li>
+								<h4>Київ</h4>
+								<h6>Дарниця</h6>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<a href="tel:0443908810" class="sidebar__phone phone">
+					<div class="phone__logo square">
+						<img src="img/phone-icon.svg" alt="icon">
+					</div>
+					<h3 class="phone__num">044 390 88 10</h3>
+					<h5 class="phone__bottom">за тарифом оператора</h5>
+				</a>
 			</div>
 			<div class="sidebar__socials socials">
 				<div>
@@ -146,6 +179,19 @@
 					</a>
 				</div>
 			</div>
+			<div class="sidebar__language language">
+				<img src="img/Flag-Ukr.png" class="header__flag-ukr" alt="flag-ukr">
+				<span class="language__text">укр.</span>
+				<img src="img/Down-Arrow.svg">
+				<nav class="language__list language__list_sidebar">
+					<ul>
+						<li>
+							<img src="img/russia 1.png" alt="rus">
+							<span class="language__text">РУС.</span>
+						</li>
+					</ul>
+				</nav>
+			</div>
 		</aside>
 		<main class="main">
 			<div class="cards">
@@ -171,8 +217,11 @@
 					</div>
 					<div class="book-form__block-city block-city">
 						<label class="book-form__label-city label-city" for="city">Виберіть місто</label>
-						<input placeholder="Київ" type="search" id="city" name="city" class="book-form__city-input city-input">
-						<button class="book-form__btn-search btn-search"><img src="img/search 1.svg"></button>
+						<div class="book-form__city-input-block city-input-block">
+							<input placeholder="Київ" type="search" id="city" name="city" class="book-form__city-input city-input">
+							<div class="city-input-block__decor-underline"></div>
+							<button class="btn-search"><img src="img/search 1.svg"></button>
+						</div>
 					</div>
 					<form action="#" class="book-form__block-form">
 						<label for="name" class="book-form__label-name label-name">Ваше ім’я</label>
@@ -196,9 +245,11 @@
 						<h5 class="top-sales__info">З іонами срібла</h5>
 						<h4 class="top-sales__price">177.00</h4>
 						<form action="" class="top-sales__form">
-							<button class="btn-min-plus"><img src="img/remove 1.svg"></button>
-							<input placeholder="1" type="number" class="input-number-of-bottles">
-							<button class="btn-min-plus"><img src="img/add 2.svg"></button>
+							<div class="top-sales__form-inputs">
+								<span class="btn-min-plus"><img src="img/remove 1.svg"></span>
+								<span type="number" class="input-number-of-bottles">1</span>
+								<span class="btn-min-plus"><img src="img/add 2.svg"></span>
+							</div>
 							<button class="top-sales__cart"><img src="img/shopping-cart 1 (1).svg"><span>В кошик</span></button>
 						</form>
 						<div class="top-sales__circle"><h3>топ</h3></div>
@@ -213,9 +264,11 @@
 						<h5 class="top-sales__info">З іонами срібла</h5>
 						<h4 class="top-sales__price">177.00</h4>
 						<form action="" class="top-sales__form">
-							<button class="btn-min-plus"><img src="img/remove 1.svg"></button>
-							<input placeholder="1" type="number" class="input-number-of-bottles">
-							<button class="btn-min-plus"><img src="img/add 2.svg"></button>
+							<div class="top-sales__form-inputs">
+								<span class="btn-min-plus"><img src="img/remove 1.svg"></span>
+								<span type="number" class="input-number-of-bottles">1</span>
+								<span class="btn-min-plus"><img src="img/add 2.svg"></span>
+							</div>
 							<button class="top-sales__cart"><img src="img/shopping-cart 1 (1).svg"><span>В кошик</span></button>
 						</form>
 						<div class="top-sales__block-hover">
@@ -229,9 +282,11 @@
 						<h5 class="top-sales__info">З іонами срібла</h5>
 						<h4 class="top-sales__price">177.00</h4>
 						<form action="" class="top-sales__form">
-							<button class="btn-min-plus"><img src="img/remove 1.svg"></button>
-							<input placeholder="1" type="number" class="input-number-of-bottles">
-							<button class="btn-min-plus"><img src="img/add 2.svg"></button>
+							<div class="top-sales__form-inputs">
+								<span class="btn-min-plus"><img src="img/remove 1.svg"></span>
+								<span type="number" class="input-number-of-bottles">1</span>
+								<span class="btn-min-plus"><img src="img/add 2.svg"></span>
+							</div>
 							<button class="top-sales__cart"><img src="img/shopping-cart 1 (1).svg"><span>В кошик</span></button>
 						</form>
 						<div class="top-sales__block-hover">
@@ -414,9 +469,9 @@
 				<div class="block-fast-order__number-of-bottles">
 					<span class="block-fast-order__number-of-bottles-text">Кількість бутлів</span>
 					<div class="block-fast-order__block-input-number-of-bottles">
-						<button class="block-fast-order__btn-min-plus block-fast-order__btn-min-plus_minus btn-min-plus"><span></span></button>
-						<input placeholder="1" type="number" class="input-number-of-bottles">
-						<button class="block-fast-order__btn-min-plus block-fast-order__btn-min-plus_plus btn-min-plus"><span></span><span></span></button>
+						<span class="block-fast-order__btn-min-plus block-fast-order__btn-min-plus_minus btn-min-plus"><span></span></span>
+						<span type="number" class="input-number-of-bottles">1</span>
+						<span class="block-fast-order__btn-min-plus block-fast-order__btn-min-plus_plus btn-min-plus"><span></span><span></span></span>
 					</div>
 				</div>
 				<label for="name-fast-order" class="block-fast-order__label-name label-name">Ваше ім’я</label>
@@ -425,8 +480,11 @@
 				<input placeholder="+38(__) ___ __" type="text" id="phone-fast-order" name="phone-fast-order" class="block-fast-order__input-phone input-phone">
 				<div class="block-fast-order__block-city block-city">
 					<label class="block-fast-order__label-city label-city" for="city">Виберіть місто</label>
-					<input placeholder="Київ" type="search" id="city" name="city" class="block-fast-order__city-input city-input">
-					<button class="block-fast-order__btn-search btn-search"><img src="img/search 1.svg"></button>
+					<div class="book-form__city-input-block city-input-block">
+						<input placeholder="Київ" type="search" id="city" name="city" class="book-form__city-input city-input">
+						<div class="city-input-block__decor-underline"></div>
+						<button class="btn-search"><img src="img/search 1.svg"></button>
+					</div>
 				</div>
 				<button class="block-fast-order__btn-order btn-order"><span>Відправити</span></button>
 				<div class="block-fast-order__container-checkbox container-checkbox">
@@ -445,23 +503,27 @@
 			<div class="footer__container">
 				<div class="footer__block-image">
 					<img src="img/nero png 2.svg" alt="logo" class="footer__logo">
+				</div>
+				<div class="footer__links">
 					<a href="#" class="footer__link-privacy">Політика конфіденційності</a>
 					<a href="#" class="footer__tov-nero">© 2022 ТОВ «Nero»</a>
 				</div>
-				<ul class="footer__first-list">
-					<a href="#">Комбо-набори</a>
-					<a href="#">Вода в бутлях</a>
-					<a href="#">Виробництво</a>
-					<a href="#">Кулери</a>
-					<a href="#">Обладнання</a>
-				</ul>
-				<ul class="footer__second-list">
-					<a href="#">Про нас</a>
-					<a href="#">Доставка і оплата</a>
-					<a href="#">Блог</a>
-					<a href="#">Контакти</a>
-					<a href="#">0</a>
-				</ul>
+				<div class="footer__block-lists">
+					<ul class="footer__first-list">
+						<a href="#">Комбо-набори</a>
+						<a href="#">Вода в бутлях</a>
+						<a href="#">Виробництво</a>
+						<a href="#">Кулери</a>
+						<a href="#">Обладнання</a>
+					</ul>
+					<ul class="footer__second-list">
+						<a href="#">Про нас</a>
+						<a href="#">Доставка і оплата</a>
+						<a href="#">Блог</a>
+						<a href="#">Контакти</a>
+						<a href="#">0</a>
+					</ul>
+				</div>
 				<div class="footer__socials socials">
 					<div>
 						<a target="_blank" href="https://telegram.org/" class="socials__link-big">

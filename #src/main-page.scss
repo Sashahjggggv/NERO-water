@@ -139,7 +139,7 @@
 	}
 
 	&__city-input {
-		width: 55%;
+		width: 95%;
 	}
 
 	&__block-form {
@@ -153,6 +153,17 @@
 	&__label-name {
 		grid-row: 1/2;
 		grid-column: 1/2;
+	}
+
+	&__before-img-input {
+		&_1 {
+			grid-row: 2/3;
+			grid-column: 1/2;
+		}
+		&_2 {
+			grid-row: 2/3;
+			grid-column: 2/3;
+		}
 	}
 
 	&__input-name {
@@ -198,8 +209,9 @@
 			display: flex;
 			flex-direction: column;
 			width: 100%;
-			position: relative;
-			top: 0;
+			position: absolute;
+			top: 48%;
+			transform: translateY(-50%);
 			left: 0;
 			padding: 0 17px;
 		}
@@ -213,16 +225,8 @@
 		&__label-name {
 			margin-bottom: 9px;
 		}
-		&__input-name {
-			margin-bottom: 30px;
-			width: 100%;
-		}
 		&__label-phone {
 			margin-bottom: 9px;
-		}
-		&__input-phone {
-			margin-bottom: 30px;
-			width: 100%;
 		}
 		&__btn-order {
 			width: 100%;
@@ -254,137 +258,16 @@
 		justify-content: space-between;
 	}
 
-	&__card {
-		position: relative;
+	&__card-product {
 		flex: 0 1 33.333%;
 		margin: 0 16px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding: 17px 20px 30px;
-		overflow: hidden;
-		&:hover .top-sales__block-hover{
-			display: flex;
-		}
 	}
 
-	&__img-bottle {
-		margin-bottom: 15px;
-	}
-
-	&__title {
-		font-weight: 700;
-		font-size: 18px;
-		line-height: 25px;
-		color: #120D48;
-		margin-bottom: 6px;
-		font-family: 'Nunito', sans-serif;
-	}
-
-	&__info {
-		font-size: 15px;
-		line-height: 19px;
-		color: #656381;
-		margin-bottom: 12px;
-	}
-
-	&__price {
-		position: relative;
-		z-index: 5;
-		font-weight: 700;
-		font-size: 15px;
-		line-height: 19px;
-		color: #2F89F8;
-		&::after {content: ' грн.';}
-		margin-bottom: 14px;
-	}
-
-	&__form {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		width: 87%;
-		position: relative;
-		z-index: 5;
-	}
-
-	&__cart {
-		width: 60%;
-		background: rgba(4, 186, 66, 0.1);
-		border: 1px solid #04BA42;
-		border-radius: 20px;
-		margin-left: 15px;
-		height: 40px;
-		& span {margin-left: 12px;}
-	}
-	
-	&__block-hover {
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 3;
-		width: 100%;
-		height: 100%;
-		display: none;
-		flex-direction: column;
-		align-items: center;
-		padding: 20px;
-		background: rgba(255, 255, 255, 0.5);
-		backdrop-filter: blur(5px);
-	}
-
-	&__title-bg {
-		font-weight: 700;
-		font-size: 18px;
-		line-height: 23px;
-		color: #120D48;
-		margin: 44px 0 20px;
-
-	}
-
-	&__paragraf-bg {
-		font-size: 15px;
-		line-height: 19px;
-		color: #120D48;
-	}
-	&__form-inputs {display: flex;}
-
-	&__circle {
-		width: 161px;
-		height: 161px;
-		border-radius: 50%;
-		background: #2F89F8;
-		position: absolute;
-		top: -80px;
-		right: -80px;
-
-		& h3 {
-			position: absolute;
-			z-index: 1;
-			bottom: 19.5%;
-			left: 16%;	
-			text-transform: uppercase;
-			font-weight: 700;
-			font-size: 18px;
-			line-height: 25px;
-			color: #fff;
-			transform: rotate(45deg);
-		}
-	}
 	@media (max-width:767px) {
-		&__card {
+		&__card-product {
 			&:last-child {display: none;}
 			flex: 0 1 50%;
-			padding: 20px 12px;
 			margin: 0 5px;
-		}
-		&__cart {
-			width: 100%;
-			margin: 20px 0 0 0;
-		}
-		&__form {
-			flex-direction: column;
-			width: 100%;
 		}
 		&__cards {margin: 0 -5px;}
 	}
@@ -510,106 +393,6 @@
 		&__cards {
 			grid-template: repeat(4, auto) / 1fr 1fr;
 			grid-gap: 20px;
-		}
-	}
-}
-
-.delivery {
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 65px;
-	height: 515px;
-	background: #fff;
-	border-radius: 12px;
-	overflow: hidden;
-
-	&__content {
-		padding: 35px 0 0;
-		margin-left: 45px;
-		max-width: 400px;
-	}
-
-	&__title {
-		font-weight: 700;
-		font-size: 35px;
-		line-height: 150%;
-		color: #2F89F8;
-		margin-bottom: 5px;
-		font-family: 'Nunito', sans-serif;
-	}
-
-	&__paragraf {
-		font-size: 15px;
-		line-height: 150%;
-		color: #656381;
-	}
-
-	&__list {
-		margin: 25px 0;
-		& li {
-			font-weight: 700;
-			font-size: 18px;
-			line-height: 150%;
-			color: #120D48;
-			margin: 20px 0;
-			display: flex;
-			& span {
-				margin-left: 20px;
-				white-space: pre;
-			}
-		}
-	}
-
-	&__btn-fast-order {
-		height: 50px;
-		display: inline-flex;
-		align-items: center;
-	}
-
-	&__block-img {
-		width: 55%;
-		height: 100%;
-		position: relative;
-	}
-	&__square{
-    width: 770px;
-    height: 770px;
-    border-radius: 50%;
-    overflow: hidden;
-		position: absolute;
-		top: 50%;
-		left: 0;
-		transform: translateY(-50%);
-		& img {
-			position: absolute;
-			top: 128px;
-		}
-	}
-	@media (max-width:767px) {
-		flex-direction: column;
-		height: 710px;
-		&__content {
-			min-width: 100%;
-			height: auto;
-			margin: 0px;
-			padding: 20px;
-		}
-		&__delivery-block-img {width: 100%;}
-		&__block-img {
-			width: 100%;
-			height: 33.333%;
-		}
-		&__square {
-			top: 0;
-			left: 50%;
-			transform: translate(-50%, 0);
-			& img {
-				height: auto;
-				object-fit: cover;
-				left: 50%;
-				top: 0;
-				transform: translateX(-50%);
-			}
 		}
 	}
 }

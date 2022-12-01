@@ -1,0 +1,83 @@
+.navigation {
+  margin: 37px 0 14px 0;
+}
+.navigation a {
+  margin-top: 40px;
+  font-size: 15px;
+  line-height: 150%;
+  color: #656381;
+}
+.navigation__this-page {
+  font-weight: 700;
+}
+
+.water-in-bottles {
+  margin-bottom: 74px;
+}
+.water-in-bottles__title {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 150%;
+  color: #120D48;
+  margin-bottom: 40px;
+}
+.water-in-bottles__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.water-in-bottles__buttons button {
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #A0BCF8;
+  border-radius: 20px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media (max-width: 767px) {
+  .water-in-bottles__buttons button {
+    width: 130px;
+  }
+}
+.water-in-bottles__filter::after {
+  content: url("../img/settings 1.svg");
+}
+.water-in-bottles__sort::after {
+  content: url("../img/Down_Arrow_3_ (2).svg");
+}
+.water-in-bottles__grid {
+  display: grid;
+  grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 40px;
+}
+@media (max-width: 992px) {
+  .water-in-bottles__grid {
+    grid-row-gap: 15px;
+    grid-column-gap: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .water-in-bottles__grid {
+    grid-template: repeat(4, 1fr)/repeat(2, 1fr);
+    grid-gap: 15px;
+  }
+}
+.water-in-bottles__show-more {
+  background: rgba(4, 186, 66, 0.1);
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #04BA42;
+  border-radius: 20px;
+  height: 40px;
+  padding: 0 20px 0 50px;
+  display: flex;
+  align-items: center;
+}
+.water-in-bottles__show-more::after {
+  content: url("../img/refresh 1.svg");
+  margin-left: 10px;
+}
